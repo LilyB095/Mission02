@@ -48,7 +48,6 @@ $("#calc").click(function () {
         var lettergrade = "E"
     }
 
-    // Put the lettergrade into the html header with the id "lettergrade"
-    $("#lettergrade").html(lettergrade)
-
+    // Put the lettergrade and numeric grade together into the html header with the id "grade"
+    $("#grade").html("Your grade is: " + lettergrade + " (" + numgrade + "%)");
 })
