@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LB - Mission 2!</title>
+    <link rel="icon" href="img/smiley.png" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <!--I'm putting everything in a div so the content isn't pressed up against the edges-->
+    <div style="margin:25px 50px 25px 50px">
+        
+    <!--INTRO: NAME, 413 GOAL-->
+        <h1>Lily Barton</h1>
+
+        <p>I really enjoy spending time with my family!</p>
+        <img src="img/Resized_20200205_140335_6543.jpg" height="250" /> <!--Pic of Mom, Fi, Aunt Katy, and me :D -->
+
+        <p>
+            For IS 413, I'm looking forward to understanding how to build a web app better. I was in a "just-survive" mode last
+            semester with python and didn't start to grasp the big picture until INTEX. Now that I have a basic understanding of what
+            building a web app is like start to finish, I'm excited to dig in and gain a better understanding. I'm also looking forward to learning how
+            to protect code from attacks and make things more secure. Also, in a few years I'm hoping to launch a side business and I'll need
+            the skills to build a decently robust and secure web app for that business.
+        </p>
+
+        <!--CURRENT JOBS OF INTEREST-->
+        <b>TOP 3 JOBS of CURRENT INTEREST:</b>
+        <ul>
+            <li>
+                <b>Data Analyst</b>
+                <ul>
+                    I think this is my top one. In my job, I get to work closely with management and get to see how they are trying to
+                    implement new BI and more robust dashboards so they can make better decisions. Figuring out the data needed for that and the presentation of the
+                    data so it tells an important story is really interesting to me
+                </ul>
+            </li>
+            <li>
+                <b>Data Scientist</b>
+                <ul>Not entirely sure where the distinct lines between Data Analyst/Scientist/Engineer are. But working with the data has been my favorite part of the Core so far. :D</ul>
+            </li>
+            <li>
+                <b>Data Engineer</b>
+                <ul>Clearly I like the data! :D I like investigating and figuring out if it's clean, how to clean it up, constructing models, developing ways to better organize/store/use data. I get to see a bit of that at my job as well.</ul>
+            </li>
+        </ul>
+
+        <p>&nbsp;</p>
+
+        <!--GRADE CALCULATOR-->
+        
+        <h2>Grade Calculator</h2>
+
+        <fieldset style="width:fit-content;">
+            <legend>Enter percentages as whole number (i.e. 100): </legend>
+            <form>
+
+                <label for="assignment">Assignments: </label>
+                <input type="number" id="assignment" name="assignment" />
+                <br />
+                <label for="quiz">Quizzes: </label>
+                <input type="number" id="quiz" name="quiz" />
+                <br />
+                <label for="intex">INTEX: </label>
+                <input type="number" id="intex" name="intex" />
+                <br />
+                <input id="calc" type="button" value="Calculate" />
+            </form>
+        </fieldset>
+        
+        <p>&nbsp;</p>
+
+        <h3 id="lettergrade">Your grade is... </h3>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+    </div>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/mission2.js"></script>
+</body>
+</html>
