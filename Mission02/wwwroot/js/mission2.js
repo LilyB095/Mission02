@@ -1,17 +1,19 @@
 ﻿// Everytime the Calculate button is clicked, 
-// determine and print out lettergrade to the right spot on index.html
+// determine and print out grade to the right spot on index.html
 
 $("#calc").click(function () {
 
     // Find number grade by multiplying each category by the weight
-        //44 % - Assignments
-        //13 % - Quizzes
-        //43 % - INTEX
-        //0 % - Extra Credit - Decided not to include. :D
-    var numgrade = $("#assignment").val() * .44 + $("#quiz").val() * .13 + $("#intex").val() * .43
+        //55 % - Assignments
+        //5%   - Group Project
+        //10 % - Quizzes
+        //20 % - Exams
+        //10 % - INTEX
+    var numgrade = $("#assignment").val() * .55 + $("#group").val() * .05 +
+                    $("#quiz").val() * .1 + $("#exam").val() * .2 + $("#intex").val() * .1
 
     // Determine letter grade based on number grade
-    if (numgrade >= 93) {
+    if (numgrade >= 94) {
         var lettergrade = "A"
     }
     else if (numgrade >= 90) {
@@ -20,7 +22,7 @@ $("#calc").click(function () {
     else if (numgrade >= 87) {
         var lettergrade = "B+"
     }
-    else if (numgrade >= 83) {
+    else if (numgrade >= 84) {
         var lettergrade = "B"
     }
     else if (numgrade >= 80) {
@@ -29,7 +31,7 @@ $("#calc").click(function () {
     else if (numgrade >= 77) {
         var lettergrade = "C+"
     }
-    else if (numgrade >= 73) {
+    else if (numgrade >= 74) {
         var lettergrade = "C"
     }
     else if (numgrade >= 70) {
@@ -38,7 +40,7 @@ $("#calc").click(function () {
     else if (numgrade >= 67) {
         var lettergrade = "D+"
     }
-    else if (numgrade >= 63) {
+    else if (numgrade >= 64) {
         var lettergrade = "D"
     }
     else if (numgrade >= 60) {
